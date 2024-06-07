@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form>
+    <h2>Contact Us</h2>
+    <div class="form-group">
+      <div class="input-group">
+        <label for="First-Name">First Name *</label>
+        <input type="text" required id="First-Name">
+      </div>
+      <div class="input-group">
+        <label for="Last-Name">Last Name *</label>
+        <input type="text" required id="Last-Name">
+      </div>
+    </div>
+    <div class="input-group">
+      <label for="Email">Email *</label>
+      <input type="email" required id="Email">
+    </div>
+    <div class="input-group">
+      <label>Query Type *</label>
+      <div class="radio-group">
+        <div class="radio-option">
+          <input type="radio" id="query-general" value="general" name="query-type">
+          <label for="query-general">General Enquiry</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio" id="query-support" value="support" required name="query-type">
+          <label for="query-support">Support Request</label>
+        </div>
+      </div>
+    </div>
+    
+    <div class="input-group">
+      <label for="message">Message *</label>
+      <textarea id="message" required></textarea>
+    </div>
+    <div class="checkbox-group">
+      <input type="checkbox" id="consent" required>
+      <label for="consent">I consent to being contacted by the team *</label>
+    </div>
+    <div class="submit-group">
+      <input type="submit" value="Submit" class="submit-button">
+    </div>
+  </form>
+</body>
+</html>
